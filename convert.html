@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // currency converter function \\
+        function currencyConverter(amount) {
+            from_currency = document.getElementById("from").value;
+            to_currency = document.getElementById("to").value;
+
+            if (from_currency == "usd" && to_currency == "bdt")
+            {
+                result = amount * 84.8007;
+                document.getElementById("result").innerHTML = amount + " US DOllars = " + "<br><br>" + result + " " + "Bangladeshi Taka";
+            }
+            else if (from_currency == "usd" && to_currency == "usd")
+            {
+                result = amount;
+                document.getElementById("result").innerHTML = amount + " US DOllars = " + "<br><br>" + result + " " + "US DOllars";
+            }
+            else if (from_currency == "bdt" && to_currency == "usd")
+            {
+                result = amount *  0.0117912;
+                document.getElementById("result").innerHTML = amount + " Bangladeshi Takas = " + "<br><br>" + result + " " + "US DOllars";
+            }
+            else if (from_currency == "usd" && to_currency == "eur")
+            {
+                result = amount * 0.839340;
+                document.getElementById("result").innerHTML = amount + " US DOllars = " + "<br><br>" + result + " " + "Euros";
+            }
+            else if (from_currency == "eur" && to_currency == "usd")
+            {
+                result = amount * 1.19158 ;
+                document.getElementById("result").innerHTML = amount + " Euros = " + "<br><br>" + result + " " + "US DOllars";
+            }
+            else if (from_currency == "usd" && to_currency == "aud")
+            {
+                result = amount * 1.32590 ;
+                document.getElementById("result").innerHTML = amount + " US Dollars = " + "<br><br>" + result + " " + "Australian Dollars";
+            }
+            else if (from_currency == "aud" && to_currency == "usd")
+            {
+                result = amount * 0.754276 ;
+                document.getElementById("result").innerHTML = amount + " Australian Dollars = " + "<br><br>" + result + " " + "US Dollars";
+            }
+            else if (from_currency == "usd" && to_currency == "inr")
+            {
+                result = amount * 73.9276 ;
+                document.getElementById("result").innerHTML = amount + " US Dollars = " + "<br><br>" + result + " " + "Indian Rupees";
+            }
+            else if (from_currency == "inr" && to_currency == "usd")
+            {
+                result = amount * 0.0135267 ;
+                document.getElementById("result").innerHTML = amount + " Indian Rupees = " + "<br><br>" + result + " " + "US Dollars";
+            }
+            else if (from_currency == "bdt" && to_currency == "bdt")
+            {
+                result = amount;
+                document.getElementById("result").innerHTML = amount + " Bangladeshi Takas = " + "<br><br>" + result + " " + "Bangladeshi Takas";
+            }
+            else if (from_currency == "bdt" && to_currency == "aud")
+            {
+                result = amount*0.0156339;
+                document.getElementById("result").innerHTML = amount + " Bangladeshi Takas = " + "<br><br>" + result + " " + "Australian Dollars";
+            }
+            else if (from_currency == "aud" && to_currency == "bdt")
+            {
+                result = amount*63.9635;
+                document.getElementById("result").innerHTML = amount + " Australian Dollars = " + "<br><br>" + result + " " + "Bangladeshi Takas";
+            }
+            else if (from_currency == "bdt" && to_currency == "eur")
+            {
+                result = amount*0.00988912;
+                document.getElementById("result").innerHTML = amount + " Bangladeshi Takas = " + "<br><br>" + result + " " + "Euros";
+            }
+            else if (from_currency == "eur" && to_currency == "bdt")
+            {
+                result = amount * 101.121 ;
+                document.getElementById("result").innerHTML = amount + " Euros = " + "<br><br>" + result + " " + "Bangladeshi Takas";
+            }
+            else if (from_currency == "bdt" && to_currency == "inr")
+            {
+                result = amount*0.871358;
+                document.getElementById("result").innerHTML = amount + " Bangladeshi Takas = " + "<br><br>" + result + " " + "Indian Rupees";
+            }
+            else if (from_currency == "inr" && to_currency == "bdt")
+            {
+                result = amount * 1.14757  ;
+                document.getElementById("result").innerHTML = amount + " Indian Rupees = " + "<br><br>" + result + " " + "Bangladeshi Takas";
+            }
+            else if (from_currency == "eur" && to_currency == "eur")
+            {
+                result = amount ;
+                document.getElementById("result").innerHTML = amount + " Euros = " + "<br><br>" + result + " " + "Euros";
+            }
+            else if (from_currency == "eur" && to_currency == "aud")
+            {
+                result = amount * 1.58067 ;
+                document.getElementById("result").innerHTML = amount + " Euros = " + "<br><br>" + result + " " + "Australian Dollars";
+            }
+            else if (from_currency == "aud" && to_currency == "eur")
+            {
+                result = amount*0.632632;
+                document.getElementById("result").innerHTML = amount + " Australian Dollars = " + "<br><br>" + result + " " + "Euros";
+            }
+            else if (from_currency == "eur" && to_currency == "inr")
+            {
+                result = amount * 88.1093 ;
+                document.getElementById("result").innerHTML = amount + " Euros = " + "<br><br>" + result + " " + "Indian Rupees";
+            }
+            else if (from_currency == "inr" && to_currency == "eur")
+            {
+                result = amount *  0.0113501  ;
+                document.getElementById("result").innerHTML = amount + " Indian Rupees = " + "<br><br>" + result + " " + "Euros";
+            }
+            else if (from_currency == "aud" && to_currency == "aud")
+            {
+                result = amount;
+                document.getElementById("result").innerHTML = amount + " Australian Dollars = " + "<br><br>" + result + " " + "Australian Dollars ";
+            }
+            else if (from_currency == "aud" && to_currency == "inr")
+            {
+                result = amount* 55.7328 ;
+                document.getElementById("result").innerHTML = amount + " Australian Dollars = " + "<br><br>" + result + " " + "Indian Rupees ";
+            }
+            else if (from_currency == "inr" && to_currency == "aud")
+            {
+                result = amount *  0.0179428  ;
+                document.getElementById("result").innerHTML = amount + " Indian Rupees = " + "<br><br>" + result + " " + "Australian Dollars";
+            }
+            else if (from_currency == "inr" && to_currency == "inr")
+            {
+                result = amount ;
+                document.getElementById("result").innerHTML = amount + " Indian Rupees = " + "<br><br>" + result + " " + "Indian Rupees";
+            }
+            
+        }
+    </script>
+</head>
+
+<body>
+    <section class="container">
+        <div class="box">
+            <h2>Currency Converter</h2><br>
+            <div class="input-block">
+                <form name="BoxForm">
+                    <label for="amount">Amount</label>
+                    <input type="text" name="amount" id="amount" value="1" >
+                </form>
+            </div>
+            <div class="input-block">
+                <label for="from"> From</label>
+                <select name="from-country" id="from">
+                    <option value="bdt"> BDT - Bangladeshi Taka</option>
+                    <option value="usd" selected>USD - US Dollar </option>
+                    <option value="eur">EUR - Euro</option>
+                    <option value="aud">AUD - Australian Dollar</option>
+                    <option value="inr">INR - Indian Rupee</option>
+                </select>
+            </div>
+            <div class="input-block">
+                <label for="to">To</label>
+                <select name="to-country" id="to">
+                    <option value="bdt" selected> BDT - Bangladeshi Taka</option>
+                    <option value="usd">USD - US Dollar </option>
+                    <option value="eur">EUR - Euro</option>
+                    <option value="aud">AUD - Australian Dollar</option>
+                    <option value="inr">INR - Indian Rupee</option>
+                </select>
+            </div>
+            <div class="btn">
+                <input type="submit" value="convert" class="btn"
+                    onclick="currencyConverter((document.BoxForm.amount.value))">
+            </div>
+            <div>
+                <p id="result"></p>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
